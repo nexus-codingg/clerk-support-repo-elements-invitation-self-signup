@@ -50,8 +50,8 @@ git clone https://github.com/clerk/clerk-nextjs-app-quickstart
 
 To run the example locally, you need to:
 
-1. `npm install` the required dependencies. You may need to use `--force` to handle dependency issues from the React release candidate.
-1. `npm run dev` to launch the development server.
+1. `pnpm install` the required dependencies. You may need to use `--force` to handle dependency issues from the React release candidate.
+1. `pnpm run dev` to launch the development server.
 1. Select the "Sign in" button in the top-right corner of the app's homepage.
 
 ## Learn more
@@ -72,3 +72,13 @@ Feel free to create a support thread on our [Discord](https://clerk.com/discord)
 You can discuss ideas, ask questions, and meet others from the community in our [Discord](https://discord.com/invite/b5rXHjAg7A).
 
 If you prefer, you can also find support through our [Twitter](https://twitter.com/ClerkDev), or you can [email](mailto:support@clerk.dev) us!
+
+# Bug Reproduction
+
+1. Invite Non existing user to organization
+2. Accept invite to organization
+3. The information doesn't prefill email
+4. Try clicking the link again within the email
+5. Try entering a password
+6. Click submit
+7. Does nothing
